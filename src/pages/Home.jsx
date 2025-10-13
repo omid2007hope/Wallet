@@ -1,11 +1,9 @@
-import Header from "../components/Header";
-import NavBar from "../components/NavBar";
+import ExpenseDonut from "../components/ExpenseDonut";
 
 function Home() {
   return (
     <>
-      <Header />
-      <NavBar />
+      <ExpenseDonut />
     </>
   );
 }

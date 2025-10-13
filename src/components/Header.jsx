@@ -6,7 +6,7 @@ export default function Header({
   onBellClick,
 }) {
   return (
-    <header className="w-full bg-[#111827] border-b border-white/10 rounded-t-2xl h-12 px-4 sm:px-6 flex items-center justify-between">
+    <header className="w-full bg-[#111827] h-12 px-4 sm:px-6 flex items-center justify-between">
       {/* Left: Logo */}
       <div className="flex items-center">
         {/* simple squiggle logo to match your style */}
