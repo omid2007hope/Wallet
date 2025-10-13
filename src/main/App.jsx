@@ -1,10 +1,14 @@
-import Example from "../components/s";
+// src/main/App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../pages/home";
 
 function App() {
   return (
-    <>
-      <Example />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
