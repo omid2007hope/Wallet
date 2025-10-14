@@ -12,7 +12,7 @@ export default function FooterNav() {
   ];
 
   return (
-    <footer className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-[#0f172a]/80 backdrop-blur-md border border-gray-800 rounded-full shadow-lg px-4 py-2 flex items-center justify-between w-[90%] max-w-sm">
+    <footer className="fixed z-50 bottom-4 left-1/2 -translate-x-1/2 bg-[#0f172a]/80 backdrop-blur-md border border-gray-800 rounded-full shadow-lg px-4 py-2 flex items-center justify-between w-[90%] max-w-sm">
       {navItems.map((item) => (
         <button
           key={item.id}
