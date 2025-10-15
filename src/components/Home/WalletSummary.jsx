@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WalletSummary() {
   return (
-    <div className="min-h-screen w-full bg-[#0A0E1A] text-white flex items-start justify-center p-6 md:p-10 pb-20 sm:pb-0 lg:pb-0 pt-14 sm:pt-0 lg:pt-0">
+    <div className="min-h-screen w-full bg-[#0A0E1A] text-white flex items-start justify-center pb-20 sm:pb-0 lg:pb-0 pt-14 sm:pt-40 lg:pt-0">
       <div className="w-full max-w-xl mt-0 sm:mt-0 xl:mt-40 ">
         <div className="relative overflow-hidden rounded-3xl bg-[#0F1629] shadow-2xl ring-1 ring-white/5">
           {/* Decorative top wave */}
@@ -66,7 +66,7 @@ export default function WalletSummary() {
                     r="76"
                     fill="none"
                     stroke="url(#grad-full)"
-                    strokeWidth="18"
+                    strokeWidth="25"
                     strokeLinecap="round"
                     pathLength="100"
                     strokeDasharray="75 25" // controls visible portion
@@ -88,61 +88,6 @@ export default function WalletSummary() {
                 <div className="text-sm text-white/60">USD</div>
               </div>
             </div>
-          </div>
-
-          {/* Transactions */}
-          <div className="z-10 mt-2 px-4 pb-6 md:px-6 md:pb-8">
-            <h3 className="mb-4 text-lg font-semibold text-white/90">
-              My transactions
-            </h3>
-            <ul className="space-y-3">
-              <li className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 ring-1 ring-white/10 backdrop-blur-sm hover:bg-white/7">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-full bg-white text-black text-lg font-bold">
-                    A
-                  </div>
-                  <div>
-                    <div className="font-medium">Amazon</div>
-                    <div className="text-xs text-white/60">May 24, 2022</div>
-                  </div>
-                </div>
-                <div className="shrink-0 rounded-full bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 ring-1 ring-white/10">
-                  -$103.56
-                </div>
-              </li>
-
-              <li className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 ring-1 ring-white/10 backdrop-blur-sm hover:bg-white/7">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-full bg-white text-black text-lg font-bold">
-                    M
-                  </div>
-                  <div>
-                    <div className="font-medium">McDonalds</div>
-                    <div className="text-xs text-white/60">May 12, 2022</div>
-                  </div>
-                </div>
-                <div className="shrink-0 rounded-full bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 ring-1 ring-white/10">
-                  -$34.78
-                </div>
-              </li>
-
-              <li className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 ring-1 ring-white/10 backdrop-blur-sm hover:bg-white/7">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-full bg-white text-black text-lg font-bold">
-                    
-                  </div>
-                  <div>
-                    <div className="font-medium">Apple</div>
-                    <div className="text-xs text-white/60">May 8, 2022</div>
-                  </div>
-                </div>
-                <div className="shrink-0 rounded-full bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 ring-1 ring-white/10">
-                  -$1,000.97
-                </div>
-              </li>
-            </ul>
-
-            <div className="mt-6 flex items-center justify-center"></div>
           </div>
         </div>
       </div>
