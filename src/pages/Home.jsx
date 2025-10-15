@@ -1,9 +1,9 @@
-import WalletSummary from "../components/Home/WalletSummary";
+import Donut from "../components/Home/Donut";
 
 function Home() {
   return (
     <>
-      <WalletSummary />
+      <Donut />
     </>
   );
 }

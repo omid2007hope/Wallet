@@ -1,6 +1,7 @@
 import React from "react";
+import Analytic from "./analytic";
 
-export default function WalletSummary() {
+export default function Donut() {
   return (
     <div className="min-h-screen w-full bg-[#0A0E1A] text-white flex items-start justify-center pb-20 sm:pb-0 lg:pb-0 pt-14 sm:pt-40 lg:pt-0">
       <div className="w-full max-w-xl mt-0 sm:mt-0 xl:mt-40 ">
@@ -88,6 +89,7 @@ export default function WalletSummary() {
                 <div className="text-sm text-white/60">USD</div>
               </div>
             </div>
+            <Analytic />
           </div>
         </div>
       </div>
