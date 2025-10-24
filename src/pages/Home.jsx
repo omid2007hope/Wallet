@@ -1,9 +1,9 @@
-import BudgetPreview from "../components/Home/BudgetPreview";
+import Main from "../components/Home/Main";
 
 export default function Home() {
   return (
     <>
-      <BudgetPreview />
+      <Main />
     </>
   );
 }
