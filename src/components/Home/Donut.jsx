@@ -1,6 +1,6 @@
 export default function Donut() {
   return (
-    <div className="relative h-100 w-100 flex items-center justify-center ">
+    <div className="relative flex items-center justify-center size-80 ">
       {/* background subtle gradient aura */}
       <div className="absolute inset-0 rounded-full blur-[90px] opacity-60 bg-[conic-gradient(from_180deg_at_50%_50%,#FF8A00_0%,#FFC960_15%,#60FF9F_35%,#55F0FF_60%,#8A5BFF_85%,#FF8A00_100%)]" />
 
@@ -42,7 +42,7 @@ export default function Donut() {
             r="76"
             fill="none"
             stroke="url(#grad-full)"
-            strokeWidth="35"
+            strokeWidth="25"
             strokeLinecap="round"
             pathLength="100"
             strokeDasharray="75 25"
