@@ -2,12 +2,8 @@ import React from "react";
 import MyPhoto from "../../assets/Images/MyPhoto.jpg";
 export default function Balance() {
   return (
-    <div className="w-full flex flex-row justify-between relative overflow-hidden rounded-3xl bg-[#0F1629] shadow-2xl ring-1 ring-white/5 mb-5">
-      <img
-        src={MyPhoto}
-        alt=""
-        className="size-30 rounded-4xl border-1 mt-6 ml-4 mr-2"
-      />
+    <div className="px-0 sm:px-0 md:px-16 lg:px-25 py-0 sm:py-0 md:py-2 lg:py-2 mx-2 sm:mx-2 md:mx-4 lg:mx-4 my-4 sm:my-4 md:my-4 lg:my-4 flex items-center relative overflow-hidden rounded-3xl bg-[#0F1629] shadow-2xl ring-1 ring-white/5">
+      <img src={MyPhoto} alt="" className="size-30 rounded-4xl " />
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-row justify-center items-center p-4">
           <p className="text-3xl text-white font-bold">Omid Teimory</p>
