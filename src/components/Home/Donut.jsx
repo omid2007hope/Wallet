@@ -1,6 +1,6 @@
 export default function Donut() {
   return (
-    <div className="relative flex items-center justify-center size-80 ">
+    <div className="relative flex items-center justify-center size-70 sm:size-70 md:size-80 lg:size-80 ">
       {/* background subtle gradient aura */}
       <div className="absolute inset-0 rounded-full blur-[90px] opacity-60 bg-[conic-gradient(from_180deg_at_50%_50%,#FF8A00_0%,#FFC960_15%,#60FF9F_35%,#55F0FF_60%,#8A5BFF_85%,#FF8A00_100%)]" />
 
