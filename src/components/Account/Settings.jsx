@@ -3,7 +3,7 @@ import React from "react";
 export default function AccountSettings() {
   return (
     <div className="min-h-screen w-full bg-[#0B1220] text-gray-200">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
         {/* PERSONAL INFO */}
         <section className="rounded-2xl border border-white/10 bg-[#0F1629] p-6 sm:p-8 mb-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -96,14 +96,11 @@ export default function AccountSettings() {
                     Username
                   </label>
                   <div className="mt-2 relative">
-                    <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-sm text-gray-500">
-                      example.com/
-                    </span>
                     <input
                       id="username"
                       type="text"
-                      className="w-full rounded-lg border border-white/10 bg-[#0B1220] pl-32 pr-3 py-2.5 text-sm text-gray-200 placeholder:text-gray-500 shadow-inner focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/40"
-                      placeholder="janesmith"
+                      className="w-full rounded-lg border border-white/10 bg-[#0B1220] pl-2.5 pr-3 py-2.5 text-sm text-gray-200 placeholder:text-gray-500 shadow-inner focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/40"
+                      placeholder="@example"
                     />
                   </div>
                 </div>
@@ -208,44 +205,6 @@ export default function AccountSettings() {
                   className="inline-flex rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 >
                   Save
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
-
-        {/* LOG OUT OTHER SESSIONS */}
-        <section className="rounded-2xl border border-white/10 bg-[#0F1629] p-6 sm:p-8 mb-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div>
-              <h2 className="text-lg font-semibold text-white">
-                Log out other sessions
-              </h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Please enter your password to confirm you would like to log out
-                of your other sessions across all of your devices.
-              </p>
-            </div>
-
-            <form className="lg:col-span-2">
-              <div className="max-w-3xl">
-                <label
-                  htmlFor="logout-password"
-                  className="block text-sm font-medium text-gray-300"
-                >
-                  Your password
-                </label>
-                <input
-                  id="logout-password"
-                  type="password"
-                  className="mt-2 w-full rounded-lg border border-white/10 bg-[#0B1220] px-3 py-2.5 text-sm text-gray-200 placeholder:text-gray-500 shadow-inner focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/40"
-                />
-
-                <button
-                  type="submit"
-                  className="mt-4 inline-flex rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-                >
-                  Log out other sessions
                 </button>
               </div>
             </form>
