@@ -15,26 +15,6 @@ export default function AccountSettings() {
               <p className="mt-2 text-sm text-gray-400">
                 Use a permanent address where you can receive mail.
               </p>
-
-              {/* Avatar */}
-              <div className="mt-6 flex items-center gap-4">
-                <img
-                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=256&auto=format&fit=crop"
-                  alt="Avatar"
-                  className="h-20 w-20 rounded-xl object-cover ring-1 ring-white/15"
-                />
-                <div>
-                  <button
-                    type="button"
-                    className="inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-                  >
-                    Change avatar
-                  </button>
-                  <p className="mt-2 text-xs text-gray-400">
-                    JPG, GIF or PNG. 1MB max.
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Form */}
@@ -93,39 +73,15 @@ export default function AccountSettings() {
                     htmlFor="username"
                     className="block text-sm font-medium text-gray-300"
                   >
-                    Username
+                    Password
                   </label>
                   <div className="mt-2 relative">
                     <input
                       id="username"
                       type="text"
                       className="w-full rounded-lg border border-white/10 bg-[#0B1220] pl-2.5 pr-3 py-2.5 text-sm text-gray-200 placeholder:text-gray-500 shadow-inner focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/40"
-                      placeholder="@example"
+                      placeholder="************"
                     />
-                  </div>
-                </div>
-
-                {/* Timezone */}
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="timezone"
-                    className="block text-sm font-medium text-gray-300"
-                  >
-                    Timezone
-                  </label>
-                  <div className="mt-2">
-                    <select
-                      id="timezone"
-                      className="w-full appearance-none rounded-lg border border-white/10 bg-[#0B1220] px-3 py-2.5 text-sm text-gray-200 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/40"
-                      defaultValue="PST"
-                    >
-                      <option value="PST">Pacific Standard Time</option>
-                      <option value="MST">Mountain Standard Time</option>
-                      <option value="CST">Central Standard Time</option>
-                      <option value="EST">Eastern Standard Time</option>
-                      <option value="CET">Central European Time</option>
-                      <option value="EET">Eastern European Time</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -135,7 +91,7 @@ export default function AccountSettings() {
                   type="submit"
                   className="inline-flex rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 >
-                  Save
+                  Login
                 </button>
               </div>
             </form>
@@ -204,7 +160,7 @@ export default function AccountSettings() {
                   type="submit"
                   className="inline-flex rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 >
-                  Save
+                  Apply
                 </button>
               </div>
             </form>
@@ -230,7 +186,7 @@ export default function AccountSettings() {
                 type="button"
                 className="inline-flex rounded-lg bg-red-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-400"
               >
-                Yes, delete my account
+                Delete Account
               </button>
             </div>
           </div>

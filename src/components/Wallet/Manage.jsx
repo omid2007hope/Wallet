@@ -1,9 +1,11 @@
 import React from "react";
+import Balance from "../Home/Balance";
+import BalancePreview from "../Home/BalancePreview";
 
-export default function AccountSettings() {
+export default function Manage() {
   return (
-    <div className="min-h-screen w-full bg-[#0B1220] text-gray-200">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20">
+    <div className="min-h-screen w-full flex flex-cols justify-center bg-[#0B1220] text-gray-200">
+      <div className="py-20">
         {/* PERSONAL INFO */}
         <section className="rounded-2xl border border-white/10 bg-[#0F1629] p-6 sm:p-8 mb-8">
           <div className="flex flex-row items-center justify-around gap-8">
@@ -50,6 +52,9 @@ export default function AccountSettings() {
                 </button>
               </div>
             </form>
+          </div>
+          <div className="mt-8">
+            <Balance />
           </div>
         </section>
       </div>
