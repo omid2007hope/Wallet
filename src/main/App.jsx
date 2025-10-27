@@ -1,15 +1,25 @@
-// src/main/App.jsx
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// src/App.jsx
+import Header from "../components/Header";
+import NavBar from "../components/NavBar";
+import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
+import Account from "../pages/Account";
+import Wallet from "../pages/Wallet";
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter>
+    <>
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/Wallet" element={<Wallet />} />
+
+        {/* Add more routes as needed */}
       </Routes>
-    </BrowserRouter>
+
+      <NavBar />
+    </>
   );
 }
-
-export default App;
