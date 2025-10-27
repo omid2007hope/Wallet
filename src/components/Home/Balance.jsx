@@ -1,5 +1,4 @@
 import React from "react";
-import MyPhoto from "../../assets/Images/MyPhoto.jpg";
 import Donut from "./Donut";
 export default function Balance() {
   return (

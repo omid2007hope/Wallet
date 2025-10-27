@@ -1,11 +1,10 @@
 import React from "react";
 import Balance from "../Home/Balance";
-import BalancePreview from "../Home/BalancePreview";
 
 export default function Manage() {
   return (
-    <div className="min-h-screen w-full flex flex-cols justify-center bg-[#0B1220] text-gray-200">
-      <div className="py-20">
+    <div className="w-screen h-screen flex flex-cols justify-center bg-[#0B1220] text-gray-200">
+      <div className="py-14 sm:py-14 md:py-14 lg:py-14 px-0 sm:px-0 md:px-0 lg:px-0">
         {/* PERSONAL INFO */}
         <section className="rounded-2xl border border-white/10 bg-[#0F1629] p-6 sm:p-8 mb-8">
           <div className="flex flex-row items-center justify-around gap-8">

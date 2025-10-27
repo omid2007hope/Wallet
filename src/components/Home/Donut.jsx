@@ -1,6 +1,6 @@
 export default function Donut() {
   return (
-    <div className="relative flex items-center justify-center size-70 sm:size-70 md:size-40 lg:size-40 ">
+    <div className="relative flex items-center justify-center size-25 sm:size-25 md:size-40 lg:size-40 ">
       {/* background subtle gradient aura */}
       <div className="absolute inset-0 rounded-full blur-[90px] opacity-60 bg-[conic-gradient(from_180deg_at_50%_50%,#FF8A00_0%,#FFC960_15%,#60FF9F_35%,#55F0FF_60%,#8A5BFF_85%,#FF8A00_100%)]" />
 
@@ -53,14 +53,16 @@ export default function Donut() {
       </svg>
 
       {/* inner dark center */}
-      <div className="absolute inset-[18px] rounded-full bg-[#0F1629]" />
+      <div className="absolute inset-[10px] rounded-full bg-[#0F1629]" />
 
       {/* Center text */}
-      <div className="relative text-center space-y-2">
-        <span className="inline-flex items-center justify-center rounded-full bg-emerald-500/20 px-1.5 py-0.5 text-sm font-medium text-emerald-400 ring-1 ring-emerald-400/30">
-          +8.6%
+      <div className="relative text-center space-y-0 sm:space-y-0 md:space-y-2 lg:space-y-2 ">
+        <span className="inline-flex items-center justify-center items-center rounded-full bg-emerald-500/20 px-0.5 py-0.1 sm:px-0.5 md:px-1.5 lg:px-1.5 sm:py-0.1 md:py-0.5 lg:py-0.5 text-sm font-medium text-emerald-400 ring-1 ring-emerald-400/30">
+          +0.0%
         </span>
-        <div className="text-2xl font-bold">$5,643.50</div>
+        <div className="text-sm sm:text-xl md:text-sm lg:text-2xl font-bold">
+          $10,000
+        </div>
         <div className="text-sm text-white/60">USD</div>
       </div>
     </div>
