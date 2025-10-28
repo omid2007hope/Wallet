@@ -61,7 +61,7 @@ export default function Donut() {
           +0.0%
         </span>
         <div className="text-sm sm:text-xl md:text-sm lg:text-2xl font-bold">
-          $10,000
+          $0
         </div>
         <div className="text-sm text-white/60">USD</div>
       </div>

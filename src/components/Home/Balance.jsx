@@ -13,7 +13,7 @@ export default function Balance() {
         <div className="flex flex-col justify-center p-4 mt-5 mr-10 sm:mr-10 md:mr-22 lg:mr-22">
           <p className="text-xs text-gray-400">AVAILABLE BALANCE</p>
           <p className="text-1xl sm:text-1xl md:text-2xl lg:text-2xl font-bold">
-            $100.50
+            $0
           </p>
         </div>
       </div>

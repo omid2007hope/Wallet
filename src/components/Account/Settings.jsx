@@ -12,9 +12,6 @@ export default function AccountSettings() {
               <h2 className="text-lg font-semibold text-white">
                 Personal Information
               </h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Use a permanent address where you can receive mail.
-              </p>
             </div>
 
             {/* Form */}
@@ -105,9 +102,6 @@ export default function AccountSettings() {
               <h2 className="text-lg font-semibold text-white">
                 Change password
               </h2>
-              <p className="mt-2 text-sm text-gray-400">
-                Update your password associated with your account.
-              </p>
             </div>
 
             <form className="lg:col-span-2">
@@ -174,11 +168,6 @@ export default function AccountSettings() {
               <h2 className="text-lg font-semibold text-white">
                 Delete account
               </h2>
-              <p className="mt-2 text-sm text-gray-400 max-w-md">
-                No longer want to use our service? You can delete your account
-                here. This action is not reversible. All information related to
-                this account will be deleted permanently.
-              </p>
             </div>
 
             <div className="lg:col-span-2">
