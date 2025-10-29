@@ -4,9 +4,9 @@ import Chip from "../../assets/Images/Chip.png";
 export default function Card() {
   return (
     <div className="w-full h-full flex flex-col justify-evenly items-center bg-[#0B1220] text-white rounded-3xl">
-      <div className="w-full flex flex-row justify-evenly items-center pt-4 pb-5">
-        <img src={Chip} alt="" className="w-14 rounded-2xl mr-55" />
-        <p className="text-3xl font-bold">Bank</p>
+      <div className="w-full flex flex-row justify-evenly items-center pb-5">
+        <img src={Chip} alt="" className="w-15 h-11 rounded-lg mr-55 mt-6" />
+        <p className="text-3xl font-bold mt-4">Bank</p>
       </div>
       <div className="w-full flex flex-row justify-evenly items-center pt-8 pb-8 text-3xl font-bold">
         <div className="flex flex-row justify-evenly items-center">
