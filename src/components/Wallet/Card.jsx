@@ -5,10 +5,10 @@ import Background from "../../assets/Images/Background.png";
 export default function Card() {
   return (
     <div
-      className="text-white rounded-3xl bg-cover bg-center border-1"
+      className="text-white/85 rounded-3xl bg-cover bg-center border-3 shadow-lg/85 shadow-black/85 border-black"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className="w-full h-full flex flex-col justify-evenly items-center text-white rounded-3xl">
+      <div className="w-full h-full flex flex-col justify-evenly items-center text-white/85 rounded-3xl">
         <div className="w-full flex flex-row justify-evenly items-center pb-0 sm:pb-0 md:pb-5 lg:pb-5 ">
           <img
             src={Chip}
