@@ -1,5 +1,6 @@
 import React from "react";
 import Balance from "./Balance";
+import Card from "./Card";
 
 export default function Manage() {
   return (
@@ -9,7 +10,9 @@ export default function Manage() {
           <div className="text-3xl font-bold">
             <Balance />
           </div>
-          <div className="rounded-2xl border border-white/10 bg-[#0F1629] p-10 m-2"></div>
+          <div className="rounded-2xl border border-white/10 bg-[#0F1629] p-10 m-2">
+            <Card />
+          </div>
         </div>
       </div>
     </div>
