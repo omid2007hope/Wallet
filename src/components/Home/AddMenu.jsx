@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import {
   Dialog,
   DialogBackdrop,
@@ -9,18 +8,20 @@ import {
 } from "@headlessui/react";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
-export default function AddMenu() {
-  const [open, setOpen] = useState(true);
-
+export default function AddMenu(props) {
   return (
     <div>
-      <Dialog open={open} onClose={setOpen} className="relative z-50">
+      <Dialog
+        open={props.open}
+        onClose={props.setOpen}
+        className="relative z-50"
+      >
         <DialogBackdrop
           transition
           className="fixed inset-0 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
         />
 
-        <div className="fixed bottom-14 top-0 md:top-100 lg:top-100 left-0 md:left-0 lg:left-60 inset-0 z-50 w-screen overflow-y-auto">
+        <div className="fixed bottom-14 md:bottom-0 lg:bottom-0 top-0 md:top-100 lg:top-100 left-0 md:left-0 lg:left-60 inset-0 z-50 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
