@@ -14,9 +14,9 @@ export default function Expense() {
           <div className="rounded-2xl border border-white/10 bg-[#0F1629] p-10 m-2"></div>
         </div>
       </div>
-      <div className="fixed top-127 sm:top-127 md:top-237.5 lg:top-238.5 left-70 sm:left-70 md:left-160 lg:left-277 z-50">
+      <div className="fixed top-132 md:top-237.5 lg:top-238.5 left-69 md:left-160 lg:left-277 z-50">
         <button
-          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-4.5 sm:pb-4.5 md:pb-2.5 lg:pb-2.5 pt-2.5 sm:pt-2.5 md:pt-0.5 lg:pt-0.5 px-5.5 sm:px-5.5 md:px-7 lg:px-7 hover:bg-green-500/70 active:bg-green-500/100
+          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-2.5 md:pb-2.5 lg:pb-2.5 pt-0.5 md:pt-0.5 lg:pt-0.5 px-5.5 md:px-7 lg:px-7 hover:bg-green-500/70 active:bg-green-500/100
         "
           onClick={() => setOpen(true)}
         >
