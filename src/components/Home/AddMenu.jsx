@@ -20,7 +20,7 @@ export default function AddMenu() {
           className="fixed inset-0 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
         />
 
-        <div className="fixed top-100 md:top-100 lg:100 left:left-0 md:left-45 lg:left-110 inset-0 z-50 w-screen overflow-y-auto">
+        <div className="fixed top-100 md:top-100 lg:top-100 left:left-0 md:left-0 lg:left-60 inset-0 z-50 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
