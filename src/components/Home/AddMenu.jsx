@@ -20,7 +20,7 @@ export default function AddMenu() {
           className="fixed inset-0 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
         />
 
-        <div className="fixed inset-0 z-50 w-screen overflow-y-auto">
+        <div className="fixed top-100 md:top-100 lg:100 left:left-0 md:left-45 lg:left-110 inset-0 z-50 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
@@ -38,30 +38,30 @@ export default function AddMenu() {
                 </div>
                 <div className="w-full h-full flex flex-col justify-center items-center">
                   <div className="w-full h-full gap-6 px-5 py-5 my flex flex-row justify-evenly items-center">
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       1
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       2
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       3
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       4
                     </button>
                   </div>
                   <div className="w-full h-full gap-6 px-5 py-5 my flex flex-row justify-evenly items-center">
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       5
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       6
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       7
                     </button>
-                    <button className="w-full h-full px-5 py-4.5 flex flex-row justify-around items-center bg-white rounded-full">
+                    <button className="px-8 py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
                       8
                     </button>
                   </div>
