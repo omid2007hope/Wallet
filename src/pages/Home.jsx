@@ -1,3 +1,9 @@
+import Expense from "../components/Home/Expense";
+
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Expense />
+    </>
+  );
 }
