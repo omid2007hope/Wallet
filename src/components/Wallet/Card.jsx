@@ -22,7 +22,7 @@ export default function Card({
           />
           <p className="text-2xl md:text-3xl lg:text-3xl font-bold">{brand}</p>
         </div>
-        <div className="w-70 md:w-full lg:w-full flex flex-row justify-center items-center pt-8 md:pt-9 lg:pt-9 pb-8 md:pb-9 lg:pb-9 text-2xl md:text-3xl lg:text-3xl font-bold">
+        <div className="w-65 md:w-full lg:w-full flex flex-row justify-center items-center pt-8 md:pt-9 lg:pt-9 pb-8 md:pb-9 lg:pb-9 text-2xl md:text-3xl lg:text-3xl font-bold">
           {number}
         </div>
         <div className="w-55 md:w-85 lg:w-85 flex flex-row justify-between items-center pb-4.5 md:pb-7 lg:pb-7 pt-0 md:pt-4 lg:pt-4">
