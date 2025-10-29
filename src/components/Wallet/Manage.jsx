@@ -1,5 +1,5 @@
 import React from "react";
-import Balance from "../Home/Balance";
+import Balance from "./Balance";
 
 export default function Manage() {
   return (
