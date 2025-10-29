@@ -17,7 +17,7 @@ export default function Card({
         <div className="w-55 md:w-85 lg:w-85 flex flex-row justify-between items-center pb-0 md:pb-3 lg:pb-3 ">
           <img
             src={Chip}
-            alt=""
+            alt="Chip"
             className="w-11.5 md:w-15 lg:w-15 h-8.5 md:h-11 lg:h-11 rounded-lg mt-3.5 md:mt-4 lg:mt-4"
           />
           <p className="text-2xl md:text-3xl lg:text-3xl font-bold">{brand}</p>
