@@ -44,7 +44,7 @@ export default function FooterNav() {
           );
         })}
         <button
-          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-2.5 md:pb-0.5 lg:pb-0.5 pt-0.5 md:pt-0.5 lg:pt-0.5 px-6 md:px-6 lg:px-6 hover:bg-green-500/70 active:bg-green-500/100
+          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-1.5 md:pb-1.5 lg:pb-1.5 pt-1.5 md:pt-1.5 lg:pt-1.5 px-5 md:px-5.5 lg:px-5.5 hover:bg-green-500/70 active:bg-green-500/100
         "
           onClick={() => setOpen(true)}
         >
