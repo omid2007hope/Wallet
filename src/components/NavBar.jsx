@@ -1,7 +1,8 @@
 import { Home, Wallet, User } from "lucide-react";
+import { CirclePlus } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import AddMenu from "./Home/AddMenu";
 import { useState } from "react";
+import AddMenu from "./Home/AddMenu";
 
 export default function FooterNav() {
   const navigate = useNavigate();
@@ -42,17 +43,17 @@ export default function FooterNav() {
             </button>
           );
         })}
-      </div>
-      <div className="fixed top-132 md:top-230 lg:top-231.5 left-69 md:left-160 lg:left-277 z-50">
         <button
-          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-2.5 md:pb-2.5 lg:pb-2.5 pt-0.5 md:pt-0.5 lg:pt-0.5 px-5.5 md:px-7 lg:px-7 hover:bg-green-500/70 active:bg-green-500/100
+          className="rounded-full bg-green-500/80 border-5 border-green-950/80 pb-2.5 md:pb-0.5 lg:pb-0.5 pt-0.5 md:pt-0.5 lg:pt-0.5 px-6 md:px-6 lg:px-6 hover:bg-green-500/70 active:bg-green-500/100
         "
           onClick={() => setOpen(true)}
         >
-          <div className="text-white text-4xl font-bold">+</div>
+          <div className="text-white text-4xl font-bold itmes-center">
+            <CirclePlus size={20} />
+          </div>
         </button>
+        <AddMenu open={open} setOpen={setOpen} />
       </div>
-      <AddMenu open={open} setOpen={setOpen} />
     </div>
   );
 }
