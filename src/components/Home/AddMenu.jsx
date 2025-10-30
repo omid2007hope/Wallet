@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
 export default function AddMenu(props) {
   return (
@@ -72,7 +73,10 @@ export default function AddMenu(props) {
                   <button className="px-8 md:px-8 lg:px-8 py-1.5 flex flex-row justify-center items-center bg-green-500 rounded-md">
                     Add
                   </button>
-                  <button className="px-6 md:px-6 lg:px-6 py-1.5 flex flex-row justify-center items-center bg-red-500 rounded-md">
+                  <button
+                    className="px-6 md:px-6 lg:px-6 py-1.5 flex flex-row justify-center items-center bg-red-500 rounded-md"
+                    onClick={() => props.setOpen(false)}
+                  >
                     Discard
                   </button>
                 </div>
