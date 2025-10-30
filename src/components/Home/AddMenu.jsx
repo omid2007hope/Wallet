@@ -21,7 +21,7 @@ export default function AddMenu(props) {
           className="fixed inset-0 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
         />
 
-        <div className="fixed bottom-14 md:bottom-0 lg:bottom-0 top-0 md:top-95 lg:top-100 left-0 md:left-0 lg:left-60 inset-0 z-50 w-screen overflow-y-auto">
+        <div className="fixed bottom-16 md:bottom-0 lg:bottom-0 top-0 md:top-95 lg:top-95 left-0 md:left-0 lg:left-0 inset-0 z-50 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
@@ -33,8 +33,9 @@ export default function AddMenu(props) {
                     O
                   </div>
                   <input
+                    placeholder="Value"
                     type="text"
-                    className="px-5 md:px-22 lg:px-22 py-0.5 md:py-1.5 lg:py-1.5 mr-5 bg-green-50 border-3 border-green-300 rounded-md flex flex-row justiy-center items-center"
+                    className="py-0.5 md:py-1.5 lg:py-1.5 mr-5 bg-green-50 border-3 border-green-300 rounded-md flex flex-row justiy-center items-center"
                   />
                 </div>
                 <div className="w-full h-full flex flex-col justify-center items-center">
@@ -68,8 +69,11 @@ export default function AddMenu(props) {
                   </div>
                 </div>
                 <div className="w-full h-full flex flex-row justify-evenly items-center border-t-1 border-white rounded-md py-2.5 md:py-6 lg:py-6">
-                  <button className="px-35 md:px-55 lg:px-55 py-1.5 flex flex-row justify-center items-center bg-green-500 rounded-md">
+                  <button className="px-8 md:px-8 lg:px-8 py-1.5 flex flex-row justify-center items-center bg-green-500 rounded-md">
                     Add
+                  </button>
+                  <button className="px-6 md:px-6 lg:px-6 py-1.5 flex flex-row justify-center items-center bg-red-500 rounded-md">
+                    Discard
                   </button>
                 </div>
               </div>
