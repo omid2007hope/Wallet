@@ -8,6 +8,14 @@ import {
 } from "@headlessui/react";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import { Bold, UtensilsCrossed } from "lucide-react";
+import { House } from "lucide-react";
+import { GraduationCap } from "lucide-react";
+import { Plane } from "lucide-react";
+import { Dumbbell } from "lucide-react";
+import { Hospital } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
+import { Gamepad2 } from "lucide-react";
 
 export default function AddMenu(props) {
   return (
@@ -41,31 +49,31 @@ export default function AddMenu(props) {
                 </div>
                 <div className="w-full h-full flex flex-col justify-center items-center">
                   <div className="w-full h-full gap-6 px-5 py-3 md:py-5 lg:py-5 my flex flex-row justify-evenly items-center">
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      1
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-orange-400 border-3 border-black rounded-full">
+                      <UtensilsCrossed size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      2
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-red-900 border-3 border-black rounded-full">
+                      <House size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      3
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-blue-400 border-3 border-black rounded-full">
+                      <GraduationCap size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      4
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-green-400 border-3 border-black rounded-full">
+                      <Plane size={20} />
                     </button>
                   </div>
                   <div className="w-full h-full gap-6 px-5 py-3 md:py-5 lg:py-5 my flex flex-row justify-evenly items-center">
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      5
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-purple-400 border-3 border-black rounded-full">
+                      <Dumbbell size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      6
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-pink-400 border-3 border-black rounded-full">
+                      <Hospital size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      7
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-red-400 border-3 border-black rounded-full">
+                      <ShoppingCart size={20} />
                     </button>
-                    <button className="px-5.5 md:px-8 lg:px-8 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-white border-3 border-green-200 rounded-full">
-                      8
+                    <button className="px-5.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-yellow-400 border-3 border-black rounded-full">
+                      <Gamepad2 size={20} />
                     </button>
                   </div>
                 </div>
