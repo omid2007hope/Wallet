@@ -21,25 +21,25 @@ export default function AddMenu(props) {
   const iconList1 = [
     {
       icon: (
-        <UtensilsCrossed className="size-21 p-5 rounded-full border-3 border-black bg-orange-300 hover:bg-orange-300/80 active:bg-orange-300/50" />
+        <UtensilsCrossed className="ml-2 md:ml-0 lg:ml-0 size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-orange-300 hover:bg-orange-300/80 active:bg-orange-300/50" />
       ),
       id: "UtensilsCrossed",
     },
     {
       icon: (
-        <House className="size-21 p-5 rounded-full border-3 border-black bg-red-900 hover:bg-red-900/80 active:bg-red-900/50" />
+        <House className="size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-red-900 hover:bg-red-900/80 active:bg-red-900/50" />
       ),
       id: "House",
     },
     {
       icon: (
-        <GraduationCap className="size-21 p-5 rounded-full border-3 border-black bg-blue-300 hover:bg-blue-300/80 active:bg-blue-300/50" />
+        <GraduationCap className="size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-blue-300 hover:bg-blue-300/80 active:bg-blue-300/50" />
       ),
       id: "GraduationCap",
     },
     {
       icon: (
-        <Plane className="size-21 p-5 rounded-full border-3 border-black bg-green-300 hover:bg-green-300/80 active:bg-green-300/50" />
+        <Plane className="mr-2 md:mr-0 lg:mr-0 size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-green-300 hover:bg-green-300/80 active:bg-green-300/50" />
       ),
       id: "Plane",
     },
@@ -48,25 +48,25 @@ export default function AddMenu(props) {
   const iconList2 = [
     {
       icon: (
-        <Dumbbell className="size-21 p-5 rounded-full border-3 border-black bg-purple-300 hover:bg-purple-300/80 active:bg-purple-300/50" />
+        <Dumbbell className="ml-2 md:ml-0 lg:ml-0  size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-purple-300 hover:bg-purple-300/80 active:bg-purple-300/50" />
       ),
       id: "Dumbbell",
     },
     {
       icon: (
-        <Hospital className="size-21 p-5 rounded-full border-3 border-black bg-pink-300 hover:bg-pink-300/80 active:bg-pink-300/50" />
+        <Hospital className="size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-pink-300 hover:bg-pink-300/80 active:bg-pink-300/50" />
       ),
       id: "Hospital",
     },
     {
       icon: (
-        <ShoppingCart className="size-21 p-5 rounded-full border-3 border-black bg-red-300 hover:bg-red-300/80 active:bg-red-300/50" />
+        <ShoppingCart className="size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-red-300 hover:bg-red-300/80 active:bg-red-300/50" />
       ),
       id: "ShoppingCart",
     },
     {
       icon: (
-        <Gamepad2 className="size-21 p-5 rounded-full border-3 border-black bg-yellow-300 hover:bg-yellow-300/80 active:bg-yellow-300/50" />
+        <Gamepad2 className="mr-2 md:mr-0 lg:mr-0 size-18 md:size-21 lg:size-21 p-5 rounded-full border-3 border-black bg-yellow-300 hover:bg-yellow-300/80 active:bg-yellow-300/50" />
       ),
       id: "Gamepad2",
     },
