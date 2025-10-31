@@ -18,6 +18,60 @@ import { ShoppingCart } from "lucide-react";
 import { Gamepad2 } from "lucide-react";
 
 export default function AddMenu(props) {
+  const iconList1 = [
+    {
+      icon: (
+        <UtensilsCrossed className="size-21 p-5 rounded-full border-3 border-black bg-orange-300 hover:bg-orange-300/80 active:bg-orange-300/50" />
+      ),
+      id: "UtensilsCrossed",
+    },
+    {
+      icon: (
+        <House className="size-21 p-5 rounded-full border-3 border-black bg-red-900 hover:bg-red-900/80 active:bg-red-900/50" />
+      ),
+      id: "House",
+    },
+    {
+      icon: (
+        <GraduationCap className="size-21 p-5 rounded-full border-3 border-black bg-blue-300 hover:bg-blue-300/80 active:bg-blue-300/50" />
+      ),
+      id: "GraduationCap",
+    },
+    {
+      icon: (
+        <Plane className="size-21 p-5 rounded-full border-3 border-black bg-green-300 hover:bg-green-300/80 active:bg-green-300/50" />
+      ),
+      id: "Plane",
+    },
+  ];
+
+  const iconList2 = [
+    {
+      icon: (
+        <Dumbbell className="size-21 p-5 rounded-full border-3 border-black bg-purple-300 hover:bg-purple-300/80 active:bg-purple-300/50" />
+      ),
+      id: "Dumbbell",
+    },
+    {
+      icon: (
+        <Hospital className="size-21 p-5 rounded-full border-3 border-black bg-pink-300 hover:bg-pink-300/80 active:bg-pink-300/50" />
+      ),
+      id: "Hospital",
+    },
+    {
+      icon: (
+        <ShoppingCart className="size-21 p-5 rounded-full border-3 border-black bg-red-300 hover:bg-red-300/80 active:bg-red-300/50" />
+      ),
+      id: "ShoppingCart",
+    },
+    {
+      icon: (
+        <Gamepad2 className="size-21 p-5 rounded-full border-3 border-black bg-yellow-300 hover:bg-yellow-300/80 active:bg-yellow-300/50" />
+      ),
+      id: "Gamepad2",
+    },
+  ];
+
   return (
     <div>
       <Dialog
@@ -47,35 +101,31 @@ export default function AddMenu(props) {
                     className="w-1/2 py-0.5 md:py-1.5 lg:py-1.5 pl-2 mr-2 bg-green-50 border-3 border-green-300 rounded-md flex flex-row justiy-center items-center"
                   />
                 </div>
-                <div className="w-full h-full gap-2 flex flex-col justify-center items-center">
-                  <div className="w-full h-full px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center">
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-orange-400 hover:bg-orange-400/80 active:bg-orange-400/50  border-3 border-black rounded-full">
-                      <UtensilsCrossed size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-red-900 hover:bg-red-900/80 active:bg-red-900/50  border-3 border-black rounded-full">
-                      <House size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-blue-400 hover:bg-blue-400/80 active:bg-blue-400/50  border-3 border-black rounded-full">
-                      <GraduationCap size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-green-400 hover:bg-green-400/80 active:bg-green-400/50  border-3 border-black rounded-full">
-                      <Plane size={20} />
-                    </button>
-                  </div>
-                  <div className="w-full h-full px-0 pb-3 md:pb-6 lg:pb-6 my flex flex-row justify-evenly items-center">
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-purple-400 hover:bg-purple-400/80 active:bg-purple-400/50  border-3 border-black rounded-full">
-                      <Dumbbell size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-pink-400 hover:bg-pink-400/80 active:bg-repink-400/50  border-3 border-black rounded-full">
-                      <Hospital size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-red-400 hover:bg-red-400/80 active:bg-red-400/50  border-3 border-black rounded-full">
-                      <ShoppingCart size={20} />
-                    </button>
-                    <button className="px-3.5 md:px-6 lg:px-6 py-3.5 md:py-6 lg:py-6 flex flex-row justify-around items-center bg-yellow-400 hover:bg-yellow-400/80 active:bg-yellow-400/50  border-3 border-black rounded-full">
-                      <Gamepad2 size={20} />
-                    </button>
-                  </div>
+                <div className="gap-2 flex flex-row justify-center items-center">
+                  {iconList1.map((item) => {
+                    return (
+                      <>
+                        <div className="w-full h-full px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center">
+                          <button className="w-full h-full border-3 border-black rounded-full flex flex-row justify-around items-center">
+                            {item.icon}
+                          </button>
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
+                <div className="gap-2 flex flex-row justify-center items-center">
+                  {iconList2.map((item) => {
+                    return (
+                      <>
+                        <div className="w-full h-full px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center">
+                          <button className="w-full h-full border-3 border-black rounded-full flex flex-row justify-around items-center">
+                            {item.icon}
+                          </button>
+                        </div>
+                      </>
+                    );
+                  })}
                 </div>
                 <div className="w-full h-full flex flex-row justify-evenly items-center border-t-1 border-white rounded-md py-2.5 md:py-6 lg:py-6">
                   <button className="px-8 md:px-8 lg:px-8 py-1.5 flex flex-row justify-center items-center bg-green-500 hover:bg-green-500/80 active:bg-green-500/50 rounded-md">
