@@ -7,7 +7,7 @@ import AddMenu from "./Home/AddMenu";
 export default function FooterNav() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   // Map IDs to routes
   const toFromId = (id) => (id === "Home" ? "/" : `/${id}`);

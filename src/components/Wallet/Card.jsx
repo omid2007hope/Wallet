@@ -6,7 +6,7 @@ export default function Card({
   brand = "Bank",
   number = "5678 8930 9800 2134",
   fullName = "Omid Teimory",
-  expiry = "12/34",
+  expiry = "12/32",
 }) {
   return (
     <div

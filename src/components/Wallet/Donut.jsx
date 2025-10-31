@@ -42,7 +42,7 @@ export default function Donut() {
             r="76"
             fill="none"
             stroke="url(#grad-full)"
-            strokeWidth="25"
+            strokeWidth="40"
             strokeLinecap="round"
             pathLength="100"
             strokeDasharray="75 25"
