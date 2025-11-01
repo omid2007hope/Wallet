@@ -74,6 +74,15 @@ export default function AddMenu(props) {
   ];
 
   const [icon, setIcon] = useState(iconList1[0].icon);
+  const [getTitle, setGetTitle] = useState("");
+
+  const addFunction = () => {
+    if (!getTitle) {
+      props.setOpen(false);
+    } else {
+      return;
+    }
+  };
 
   return (
     <div>
@@ -97,6 +106,7 @@ export default function AddMenu(props) {
                 <div className="w-full flex flex-row justify-between items-center border-b-1 border-blue-950 shadow-lg shadow-blue-950 rounded-md py-2 md:py-4.5 lg:py-4.5">
                   <div className="ml-12 md:ml-22 lg:ml-22">{icon}</div>
                   <input
+                    onChange={(x) => setGetTitle(x.target.value)}
                     placeholder="Value"
                     type="text"
                     className="w-38.5 md:w-52 lg:w-52 py-1.5 md:py-2.5 lg:py-2.5 pl-2.5 mr-1.5 md:mr-5.5 lg:mr-5.5 border-3 border-balck rounded-md flex flex-row justiy-center items-center bg-blue-50 "
@@ -135,7 +145,10 @@ export default function AddMenu(props) {
                   })}
                 </div>
                 <div className="w-full h-full flex flex-row justify-evenly items-center border-t-1 border-blue-950 shadow-lg shadow-blue-950 rounded-md py-2.5 md:py-6 lg:py-6">
-                  <button className="px-12 md:px-15 lg:px-15 py-1.5 flex flex-row justify-center items-center bg-green-500 hover:bg-green-500/80 active:bg-green-500/50 rounded-md border-3">
+                  <button
+                    onClick={() => addFunction()}
+                    className="px-12 md:px-15 lg:px-15 py-1.5 flex flex-row justify-center items-center bg-green-500 hover:bg-green-500/80 active:bg-green-500/50 rounded-md border-3"
+                  >
                     Add
                   </button>
                   <button
