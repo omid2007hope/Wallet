@@ -1,4 +1,5 @@
 import Balance from "../Wallet/Balance";
+import Items from "./Items";
 
 export default function Expense() {
   return (
@@ -8,7 +9,9 @@ export default function Expense() {
           <div className="text-3xl font-bold">
             <Balance />
           </div>
-          <div className="rounded-2xl border border-white/10 bg-[#0F1629] p-10 m-2"></div>
+          <div className="rounded-2xl border border-white/10 bg-[#0F1629] m-2">
+            <Items />
+          </div>
         </div>
       </div>
     </div>
