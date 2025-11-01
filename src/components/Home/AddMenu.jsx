@@ -115,32 +115,34 @@ export default function AddMenu(props) {
                 <div className="gap-0 md:gap-10 lg:gap-10 flex flex-row justify-center items-center">
                   {iconList1.map((item) => {
                     return (
-                      <>
-                        <div className="px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center">
-                          <button
-                            onClick={() => setIcon(item.icon)}
-                            className="border-3 border-black rounded-full flex flex-row justify-around items-center"
-                          >
-                            {item.icon}
-                          </button>
-                        </div>
-                      </>
+                      <div
+                        key={item.id}
+                        className="px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center"
+                      >
+                        <button
+                          onClick={() => setIcon(item.icon)}
+                          className="border-3 border-black rounded-full flex flex-row justify-around items-center"
+                        >
+                          {item.icon}
+                        </button>
+                      </div>
                     );
                   })}
                 </div>
                 <div className="gap-0 md:gap-10 lg:gap-10 flex flex-row justify-center items-center">
                   {iconList2.map((item) => {
                     return (
-                      <>
-                        <div className="px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center">
-                          <button
-                            onClick={() => setIcon(item.icon)}
-                            className="border-3 border-black rounded-full flex flex-row justify-around items-center"
-                          >
-                            {item.icon}
-                          </button>
-                        </div>
-                      </>
+                      <div
+                        key={item.id}
+                        className="px-0 p-3 md:pt-6 lg:pt-6 my flex flex-row justify-evenly items-center"
+                      >
+                        <button
+                          onClick={() => setIcon(item.icon)}
+                          className="border-3 border-black rounded-full flex flex-row justify-around items-center"
+                        >
+                          {item.icon}
+                        </button>
+                      </div>
                     );
                   })}
                 </div>

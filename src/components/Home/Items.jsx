@@ -9,18 +9,20 @@ export default function Items({
 }) {
   const [icon, setIcon] = useState(x);
   return (
-    <div className="w-full h-full flex flex-row justify-between items-center rounded-3xl">
-      <div className="flex flex-row items-center pr-12 bg-[#0F1629] shadow-2xl rounded-2xl ring-1 ring-white/5">
-        <div className="">{icon}</div>
+    <div className="w-full h-full flex flex-row justify-between items-center rounded-3xl bg-[#0F1629] shadow-2xl rounded-2xl ring-1 ring-white/5">
+      <div className="w-full h-full flex flex-row justify-center items-center py-8 border-r-1">
+        <div className="w-full h-full flex flex-row justify-center items-center">
+          {icon}
+        </div>
       </div>
-      <div className="flex flex-col items-center bg-[#0F1629] shadow-2xl rounded-2xl ring-1 ring-white/5">
+      <div className="flex flex-col items-center bg-[#0F1629] ">
         <div className="flex flex-row items-center py-2 pr-62">
           <p className="text-1xl font-bold rounded-md ml-2.5">{title}</p>
-          <button className="bg-green-500/50 hover:bg-green-500/20 active:bg-green-400/50 text-green-400 border-1 border-green-400 rounded-md  px-0.5 ml-2.5 mr-2.5">
+          <button className="bg-green-500/50 hover:bg-green-500/20 active:bg-green-400/50 text-green-400 border-1 border-green-400 rounded-md px-0.5 ml-2.5 mr-2.5">
             Edit
           </button>
         </div>
-        <div className="flex flex-row items-center py-2 pl-60">
+        <div className="flex flex-row items-center py-2 pl-60 border-t-1">
           <p
             className="
           text-sm font-bold rounded-md"
